@@ -1,17 +1,21 @@
 import { Fragment } from 'react'
 import { Signature, LunchSets, Dinner } from "./index";
+import mainChefMenu from '../images/mainChefMenu.jpg'
+import { setState } from 'react'
+import data from '../data.json'
 
 export default (params) => {
+    const dinner = data[2]
     
     return(
        <Fragment>
            <div>
                <h3>Chef Menu</h3>
            </div>
-           <img src="  v./images/100_1040312_mercer_knives_0391_fweb-705x529.jpg" />
-           <Signature />
-           <LunchSets />
-           <Dinner />
+           <img class="w-11/12 "  src={mainChefMenu} />
+           {/* <Signature /> */}
+           {/* <LunchSets /> */}
+           <Dinner dinnerData={dinner.Dinner}/>
        </Fragment>
     )
 }
