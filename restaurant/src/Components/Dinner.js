@@ -1,18 +1,16 @@
-import { Fragment } from "react"
-import DinnerItem from "./DinnerItem"
+import FoodItem from "./FoodItem"
 
 export default ({ dinnerData }) => {
 
     return (
-        <Fragment>
+        <div className="container mx-auto">
             {console.log(dinnerData)}
             <ul>
                 {dinnerData.map((item) => (
-                    <DinnerItem order={item.order} price={item.price} ingredients={item.ingredients} favorite={item.favorite} />
+                    <FoodItem order={item.order} price={item.price} ingredients={item.ingredients} favorite={item.favorite} />
                 ))}
                 <p>hello</p>
             </ul>
-        </Fragment>
+        </div>
     )
-
 }
