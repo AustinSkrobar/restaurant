@@ -6,7 +6,7 @@ export default (params) => {
    return(
        <Fragment>
             
-       <img className= "w-full mx-auto px-4" src={dumplings} alt="dumplings"/>
+       <img className= " bg-contain bg-center mx-auto " src={dumplings} alt="dumplings"/>
        </Fragment>
    )
 }
