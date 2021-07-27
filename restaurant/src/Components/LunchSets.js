@@ -3,7 +3,7 @@ import FoodItem from "./FoodItem";
 export default ({ lunchData }) => {
   return (
     <div className="h-1/4 py-10">
-      <h2 className="flex justify-center divide-y underline">Lunch Sets</h2>
+      <h2 className="flex justify-center divide-y underline text-xl">Lunch Sets</h2>
       <ul className="flex flex-wrap w-full justify-center">
         {lunchData.map((item) => (
           <FoodItem
