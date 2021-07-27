@@ -1,16 +1,20 @@
-import FoodItem from "./FoodItem"
+import FoodItem from "./FoodItem";
 
 export default ({ signatureData }) => {
-
-    return (
-        <div className="container mx-auto">
-            {console.log(signatureData)}
-            <ul>
-                {signatureData.map((item) => (
-                    <FoodItem order={item.order} price={item.price} ingredients={item.ingredients} favorite={item.favorite} />
-                ))}
-                <p>hello</p>
-            </ul>
-        </div>
-    )
-}
+  return (
+    <div className="h-1/4 flex justify-center py-2">
+      <ul className="">
+        <li className="flex justify-center py-4 underline">Signature</li>
+        {signatureData.map((item) => (
+          <FoodItem
+            order={item.order}
+            price={item.price}
+            ingredients={item.ingredients}
+            favorite={item.favorite}
+            w="w-96"
+          />
+        ))}
+      </ul>
+    </div>
+  );
+};
