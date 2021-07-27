@@ -11,12 +11,8 @@ export default (params) => {
   const dinner = data[2];
 
   signature.Signature[0].pic = saltedChicken
-  signature.Signature[1].pic = salmonSteak
-  signature.Signature[2].pic = crabCurry
- 
-   
- 
-  
+  signature.Signature[1].pic = crabCurry
+  signature.Signature[2].pic = salmonSteak
 
   return (
     <div className="w-full flex-col">
@@ -29,7 +25,6 @@ export default (params) => {
           />
         </div>
       </div>
-
       <div className="py-5 flex flex-col">
         <Signature signatureData={signature.Signature} />
         <LunchSets lunchData={lunch.LunchSets} />
