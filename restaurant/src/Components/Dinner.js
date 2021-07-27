@@ -1,18 +1,20 @@
-import { Fragment } from "react"
-import DinnerItem from "./DinnerItem"
+import FoodItem from "./FoodItem";
 
 export default ({ dinnerData }) => {
-
-    return (
-        <Fragment>
-            {console.log(dinnerData)}
-            <ul>
-                {dinnerData.map((item) => (
-                    <DinnerItem order={item.order} price={item.price} ingredients={item.ingredients} favorite={item.favorite} />
-                ))}
-                <p>hello</p>
-            </ul>
-        </Fragment>
-    )
-
-}
+  return (
+    <div className="h-1/4 py-2">
+      <h2 className="flex justify-center underline">Dinner</h2>
+      <ul className="flex flex-wrap w-full justify-center">
+        {dinnerData.map((item) => (
+          <FoodItem
+            order={item.order}
+            price={item.price}
+            ingredients={item.ingredients}
+            favorite={item.favorite}
+            w="w-1/3"
+          />
+        ))}
+      </ul>
+    </div>
+  );
+};
