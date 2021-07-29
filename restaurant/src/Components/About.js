@@ -1,5 +1,6 @@
-import appetizers from "../images/appetizers.jpeg"
+import appetizers from "../images/appetizers.jpeg";
 export default (params) => {
+
     return(
         <div className="static ">
             <div className="absolute text-white">
@@ -11,3 +12,4 @@ export default (params) => {
         </div>
     )
 }
+
