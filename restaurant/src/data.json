@@ -1,148 +1,152 @@
-[{
-    "Signature": [{
-            "order": "Salted Fried Chicken",
-            "price": 20,
-            "ingredients": ["Chicken", "Olive Oil", "Salt"],
-            "Favorite": false
-        },
-        {
-            "order": "Crab With Curry Sources",
-            "price": 24.5,
-            "ingredients": ["Crab", "Potatoes", "Rice"],
-            "Favorite": false
-        },
-        {
-            "order": "Imported Salmon Steak",
-            "price": 18.9,
-            "ingredients": ["Salmon", "Veggies", "Oil"],
-            "Favorite": false
-        }
+[
+  {
+    "Signature": [
+      {
+        "order": "Salted Fried Chicken",
+        "price": 20,
+        "ingredients": ["Chicken", "Olive Oil", "Salt"],
+        "Favorite": false
+      },
+      {
+        "order": "Crab With Curry Sources",
+        "price": 24.5,
+        "ingredients": ["Crab", "Potatoes", "Rice"],
+        "Favorite": false
+      },
+      {
+        "order": "Imported Salmon Steak",
+        "price": 18.9,
+        "ingredients": ["Salmon", "Veggies", "Oil"],
+        "Favorite": false
+      }
     ]
-},
-{
-    "LunchSets": [{
-            "order": "Baked Potato Pizza",
-            "price": 12,
-            "ingredients": ["Potato", "Bread", "Chesse"],
-            "Favorite": true
-        },
-        {
-            "order": "Grilled Pork With Preserved Lemons",
-            "price": 22,
-            "ingredients": ["Pork", "Lemons", "Onions"],
-            "Favorite": true
-        },
-        {
-            "order": "Apple Smoked Chicken With White Sauce",
-            "price": 18.9,
-            "ingredients": ["Chicken", "Apple", "Tomatos"],
-            "Favorite": true
-        },
-        {
-            "order": "Grilled Hanger Steak With Harissa and Pickled Red Onions",
-            "price": 29.9,
-            "ingredients": ["Beef", "Onion", "Tomatos"],
-            "Favorite": false
-        },
-        {
-            "order": "Pork Tenderloin Marinated in Yogurt",
-            "price": 20,
-            "ingredients": ["Pork", "Tenderloin", "Yogurt"],
-            "Favorite": false
-        },
-        {
-            "order": "Lemon-Rosemart Chicken",
-            "price": 19.9,
-            "ingredients": ["Chicken", "Rosemary", "Lemon"],
-            "Favorite": false
-        },
-        {
-            "order": "Braised Chicken Breast With White Wine and Shallots",
-            "price": 24.5,
-            "ingredients": ["Chicken Breast", "Wine"],
-            "Favorite": false
-        },
-        {
-            "order": "Meatloaf With Black Pepper-Honey BBQ",
-            "price": 19.9,
-            "ingredients": ["Pepper", "Chicken", "Honey"],
-            "Favorite": false
-        }
+  },
+  {
+    "LunchSets": [
+      {
+        "order": "Baked Potato Pizza",
+        "price": 12,
+        "ingredients": ["Potato", "Bread", "Chesse"],
+        "Favorite": true
+      },
+      {
+        "order": "Grilled Pork With Preserved Lemons",
+        "price": 22,
+        "ingredients": ["Pork", "Lemons", "Onions"],
+        "Favorite": true
+      },
+      {
+        "order": "Apple Smoked Chicken With White Sauce",
+        "price": 18.9,
+        "ingredients": ["Chicken", "Apple", "Tomatos"],
+        "Favorite": true
+      },
+      {
+        "order": "Grilled Hanger Steak With Harissa and Pickled Red Onions",
+        "price": 29.9,
+        "ingredients": ["Beef", "Onion", "Tomatos"],
+        "Favorite": false
+      },
+      {
+        "order": "Pork Tenderloin Marinated in Yogurt",
+        "price": 20,
+        "ingredients": ["Pork", "Tenderloin", "Yogurt"],
+        "Favorite": false
+      },
+      {
+        "order": "Lemon-Rosemart Chicken",
+        "price": 19.9,
+        "ingredients": ["Chicken", "Rosemary", "Lemon"],
+        "Favorite": false
+      },
+      {
+        "order": "Braised Chicken Breast With White Wine and Shallots",
+        "price": 24.5,
+        "ingredients": ["Chicken Breast", "Wine"],
+        "Favorite": false
+      },
+      {
+        "order": "Meatloaf With Black Pepper-Honey BBQ",
+        "price": 19.9,
+        "ingredients": ["Pepper", "Chicken", "Honey"],
+        "Favorite": false
+      }
     ]
-},
-{
-    "Dinner": [{
-            "order": "Small Juicy Steamed Dumplings(8)",
-            "price": 12,
-            "ingredients": ["Potato", "Chicken", "Cheese"],
-            "Favorite": true
-        },
-        {
-            "order": "Wild Mushroom Bucatini With Kale",
-            "price": 14.5,
-            "ingredients": ["Mushroom", "Veggie", "White Sources"],
-            "Favorite": false
-        },
-        {
-            "order": "Grilled Hanger Steak With Harissa and Pickled Red Onions",
-            "price": 29.9,
-            "ingredients": ["Beef", "Onions", "Tomatos"],
-            "Favorite": false
-        },
-        {
-            "order": "Lemon-Rosemary Chicken",
-            "price": 19.9,
-            "ingredients": ["Chicken", "Rosemary", "Lemon"],
-            "Favorite": false
-        },
-        {
-            "order": "Roasted Red Potatoes With Rosemary",
-            "price": 15.5,
-            "ingredients": ["Potatoe", "Rosemary", "Butter"],
-            "Favorite": true
-        },
-        {
-            "order": "Prawn Sausage Cassoulet",
-            "price": 30.5,
-            "ingredients": ["Prawn", "Sausage", "Totatos"],
-            "Favorite": false
-        },
-        {
-            "order": "Braised Chicken Breast With White Wine and Shallots",
-            "price": 24.5,
-            "ingredients": ["Chicken Breast", "Wine"],
-            "Favorite": false
-        },
-        {
-            "order": "Grilled Pork With Preserved Lemons",
-            "price": 22,
-            "ingredients": ["Pork", "Lemons", "Onions"],
-            "Favorite": true
-        },
-        {
-            "order": "Black Bean Sweet Potato Quinoa (Meatless)Loaf",
-            "price": 12,
-            "ingredients": ["Bean", "Potato"],
-            "Favorite": false
-        },
-        {
-            "order": "Meatloaf With Black Pepper-Honey BBQ",
-            "price": 19.9,
-            "ingredients": ["Pepper", "Chicken", "Honey"],
-            "Favorite": false
-        },
-        {
-            "order": "Apple Smoked Chicken With White Sauce",
-            "price": 18.9,
-            "ingredients": ["Chicken", "Apple", "Tomatos"],
-            "Favorite": true
-        },
-        {
-            "order": "Pork Tenderloin Marinated in Yogurt",
-            "price": 20,
-            "ingredients": ["Pork", "Tenderloin", "Yogurt"],
-            "Favorite": false
-        }
+  },
+  {
+    "Dinner": [
+      {
+        "order": "Small Juicy Steamed Dumplings(8)",
+        "price": 12,
+        "ingredients": ["Potato", "Chicken", "Cheese"],
+        "Favorite": true
+      },
+      {
+        "order": "Wild Mushroom Bucatini With Kale",
+        "price": 14.5,
+        "ingredients": ["Mushroom", "Veggie", "White Sources"],
+        "Favorite": false
+      },
+      {
+        "order": "Grilled Hanger Steak With Harissa and Pickled Red Onions",
+        "price": 29.9,
+        "ingredients": ["Beef", "Onions", "Tomatos"],
+        "Favorite": false
+      },
+      {
+        "order": "Lemon-Rosemary Chicken",
+        "price": 19.9,
+        "ingredients": ["Chicken", "Rosemary", "Lemon"],
+        "Favorite": false
+      },
+      {
+        "order": "Roasted Red Potatoes With Rosemary",
+        "price": 15.5,
+        "ingredients": ["Potatoe", "Rosemary", "Butter"],
+        "Favorite": true
+      },
+      {
+        "order": "Prawn Sausage Cassoulet",
+        "price": 30.5,
+        "ingredients": ["Prawn", "Sausage", "Totatos"],
+        "Favorite": false
+      },
+      {
+        "order": "Braised Chicken Breast With White Wine and Shallots",
+        "price": 24.5,
+        "ingredients": ["Chicken Breast", "Wine"],
+        "Favorite": false
+      },
+      {
+        "order": "Grilled Pork With Preserved Lemons",
+        "price": 22,
+        "ingredients": ["Pork", "Lemons", "Onions"],
+        "Favorite": true
+      },
+      {
+        "order": "Black Bean Sweet Potato Quinoa (Meatless)Loaf",
+        "price": 12,
+        "ingredients": ["Bean", "Potato"],
+        "Favorite": false
+      },
+      {
+        "order": "Meatloaf With Black Pepper-Honey BBQ",
+        "price": 19.9,
+        "ingredients": ["Pepper", "Chicken", "Honey"],
+        "Favorite": false
+      },
+      {
+        "order": "Apple Smoked Chicken With White Sauce",
+        "price": 18.9,
+        "ingredients": ["Chicken", "Apple", "Tomatos"],
+        "Favorite": true
+      },
+      {
+        "order": "Pork Tenderloin Marinated in Yogurt",
+        "price": 20,
+        "ingredients": ["Pork", "Tenderloin", "Yogurt"],
+        "Favorite": false
+      }
     ]
-}
+  }
 ]
