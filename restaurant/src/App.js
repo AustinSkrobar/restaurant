@@ -7,7 +7,7 @@ function App() {
     <Fragment>
       <Navigation />
       <Header />
-      <About/>
+      <About />
       <Menu />
     </Fragment>
   );
