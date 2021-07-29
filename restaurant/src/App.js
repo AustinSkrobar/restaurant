@@ -9,7 +9,7 @@ function App() {
       <Header />
       <About/>
       <Menu />
-      {/* <ImageGallery/> */}
+      <ImageGallery/>
     </Fragment>
   );
 }
