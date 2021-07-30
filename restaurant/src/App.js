@@ -1,5 +1,5 @@
 import "./App.css";
-import { Menu, Header, Navigation, About, ImageGallery } from "./Components/index";
+import { Menu, Header, Navigation, About, Map, ImageGallery } from "./Components/index";
 import { Fragment } from "react";
 
 function App() {
@@ -9,6 +9,7 @@ function App() {
       <Header />
       <About />
       <Menu />
+      <Map />
       <ImageGallery/>
     </Fragment>
   );
