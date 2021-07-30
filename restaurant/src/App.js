@@ -9,8 +9,8 @@ function App() {
       <Header />
       <About />
       <Menu />
-      <Map />
       <ImageGallery/>
+      <Map />
     </Fragment>
   );
 }
