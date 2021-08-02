@@ -15,15 +15,17 @@ export default (params) => {
   signature.Signature[2].pic = salmonSteak;
 
   return (
-    <div className="w-full flex-col">
-      <div className="overflow-hidden flex justify-center py-5">
-        <div className="h-96 w-full">
-          <img
-            className="w-full transform -translate-y-96"
-            src={mainChefMenu}
-            alt="header for chefs menu"
-          />
+    <div>
+      <div className="relative z-50 w-1/3 h-40 bg-red-600 transform translate-x-20 translate-y-36 p-5">
+          <p className="font-cursiveText text-4xl text-white italic">Chef</p>
+          <p className="text-5xl font-thin text-white">MENU</p>
         </div>
+      <div className="h-xl w-full overflow-hidden py-5 ">
+        <img
+          className="relative z-0 w-full transform -translate-y-96"
+          src={mainChefMenu}
+          alt="header for chefs menu"
+        />
       </div>
       <div className="py-5 flex flex-col">
         <Signature signatureData={signature.Signature} />
