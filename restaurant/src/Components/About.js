@@ -4,7 +4,7 @@ export default (params) => {
     return(
         <div className="static ">
             <div className=" text-black">
-                <div className="flex justify-center">
+                <div className=" text-center">
             <p className="">UNTILL I DISCOVERED COOKING I WAS NEVER REALLY </p> 
             <p className="" >INTERESTED IN ANYTHING</p>
             </div>
