@@ -27,8 +27,15 @@ module.exports = {
         cursiveText: ["Style Script"],
       },
       height:{
-        xl: '600px',
+        xl: '40rem',
         xxl:'600px'
+      },
+      width:{
+        xl: '80rem'
+      },
+      colors: {
+        footerGray: '#262626',
+
       }
     },
   },
