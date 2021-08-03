@@ -3,6 +3,10 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      backgroundImage: theme => ({
+        'header': "url('./images/dumplings.jpg')",
+       
+       }),
       fontFamily: {
         sans: [
           '"Inter"',
@@ -23,7 +27,8 @@ module.exports = {
         cursiveText: ["Style Script"],
       },
       height:{
-        xl: '600px'
+        xl: '600px',
+        xxl:'600px'
       }
     },
   },
