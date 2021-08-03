@@ -3,10 +3,13 @@ export default (params) => {
 
     return(
         <div className="static ">
-            <div className="absolute text-white">
-            <p className="ml-80"> Until I discovered cooking I was never really interested</p>
+            <div className=" text-black">
+                <div className="flex justify-center">
+            <p className="">UNTILL I DISCOVERED COOKING I WAS NEVER REALLY </p> 
+            <p className="" >INTERESTED IN ANYTHING</p>
             </div>
-            <div className="m-80 w-1/3">
+            </div>
+            <div className="mt-32 ml-48 w-1/3">
             <img className src={appetizers} alt="appetizers" />
             </div>
         </div>
