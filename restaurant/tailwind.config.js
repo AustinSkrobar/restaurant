@@ -3,6 +3,10 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      backgroundImage: theme => ({
+        'header': "url('./images/dumplings.jpg')",
+       
+       }),
       fontFamily: {
         sans: [
           '"Inter"',
@@ -24,12 +28,14 @@ module.exports = {
       },
       height:{
         xl: '40rem',
+        xxl:'600px'
       },
       width:{
         xl: '80rem'
       },
       colors: {
         footerGray: '#262626',
+
       }
     },
   },
