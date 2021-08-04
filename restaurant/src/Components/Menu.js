@@ -20,13 +20,10 @@ export default (params) => {
           <p className="font-cursiveText text-4xl text-white italic">Chef</p>
           <p className="text-5xl font-thin text-white">MENU</p>
         </div>
-      <div className="h-xl w-full overflow-hidden py-5">
-        <img
-          className="relative z-0 w-full transform -translate-y-96"
-          src={mainChefMenu}
-          alt="header for chefs menu"
-        />
-      </div>
+      <div className="h-xl">
+        <div 
+          className="bg-Menu h-xl bg-no-repeat bg-cover bg-center w-full" alt="header for chefs menu"></div>
+        </div>
       <div className="py-5 flex flex-col">
         <Signature signatureData={signature.Signature} />
         <LunchSets lunchData={lunch.LunchSets} />

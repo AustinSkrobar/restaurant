@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       backgroundImage: theme => ({
         'header': "url('./images/dumplings.jpg')",
+        'Menu': "url('./images/mainChefMenu.jpg')",
        
        }),
       fontFamily: {
