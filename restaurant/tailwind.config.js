@@ -4,7 +4,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: theme => ({
-        'header': "url('./images/biggerDumplings.jpeg')",
+        'header': "url('./images/dumplings.jpg')",
+        'Menu': "url('./images/mainChefMenu.jpg')",
        
        }),
       fontFamily: {
@@ -27,8 +28,15 @@ module.exports = {
         cursiveText: ["Style Script"],
       },
       height:{
-        xl: '600px',
+        xl: '40rem',
         xxl:'600px'
+      },
+      width:{
+        xl: '80rem'
+      },
+      colors: {
+        footerGray: '#262626',
+
       }
     },
   },

@@ -11,7 +11,7 @@ function App() {
       <Menu />
       <ImageGallery/>
       <Map />
-      <Footer/>
+      <Footer /> 
     </Fragment>
   );
 }
