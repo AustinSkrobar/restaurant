@@ -1,29 +1,34 @@
+
 import "../Components/Header";
 import Booking from './Bookings/Booking'
 
+import Header from "../Components/Header";
+
+
 export default (params) => {
   return (
-    <nav className="p-7 absolute top-0 right-10">
+    <nav className="p-7 absolute sticky h-0 z-40 top-0 right-10">
       <div className="lg:w-auto">
         <div className=" mr-8 flex justify-center">
           <a href="" className=" text-white hover:text-red-700 mr-4">
             Welcome
           </a>
-          <a href="" className=" text-white hover:text-red-700 mr-4">
+          <a href className="  hover:text-red-700 mr-4">
             About us
           </a>
-          <a href className=" text-white hover:text-red-700 mr-4">
+          <a href className="  hover:text-red-700 mr-4">
             Menu
           </a>
-          <a href className=" text-white hover:text-red-700 mr-4">
+          <a href className="  hover:text-red-700 mr-4">
             Gallery
           </a>
-          <a href className=" text-white hover:text-red-700 mr-4">
+          <a href className="  hover:text-red-700 mr-4">
             News
           </a>
-          <a href className=" text-white hover:text-red-700 mr-4">
+          <a href className="  hover:text-red-700 mr-4">
             Find us
           </a>
+
           <a href={Booking} className=" text-white hover:text-red-700 mr-4 px-1 border-2">
             Reservation
           </a>
