@@ -11,9 +11,12 @@ export default (params) => {
         <p className="font-thin">Making to the delicious premium food since 1990</p>{" "}
         <p className="font-thin">Book online or call 1(800)456-6743</p>
       </div>
+      
 
       <div
-        className=" bg-header h-xxl  bg-no-repeat bg-cover bg-center  "
+
+        className="bg-header h-xxl bg-no-repeat bg-cover bg-top mx-auto w-full"
+
 
         alt="dumplings"
       div/>
