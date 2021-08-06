@@ -1,10 +1,11 @@
 import "../Components/Header";
+import Booking from './Bookings/Booking'
 
 export default (params) => {
   return (
     <nav className="p-7 absolute top-0 right-10">
       <div className="lg:w-auto">
-        <div className="text-sm mr-8 flex justify-center">
+        <div className=" mr-8 flex justify-center">
           <a href="" className=" text-white hover:text-red-700 mr-4">
             Welcome
           </a>
@@ -23,12 +24,12 @@ export default (params) => {
           <a href className=" text-white hover:text-red-700 mr-4">
             Find us
           </a>
-          <a href className=" text-white hover:text-red-700 mr-4 border-2">
+          <a href={Booking} className=" text-white hover:text-red-700 mr-4 px-1 border-2">
             Reservation
           </a>
           {/* <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6"
+            className="h-6 w-6 text-white"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
