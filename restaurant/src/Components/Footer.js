@@ -7,7 +7,7 @@ import lettuceWraps from "../images/lettuceWraps.jpg"
 export default (params) => {
   return (
     <div>
-      <div className="w-full h-72 grid justify-items-center bg-footerGray">
+      <div className="w-full h-72 grid justify-items-center bg-footerGray md:bg-black-900">
         <div className="w-xl flex flex-row p-4">
           <div className="ml-16 w-1/3 text-white p-4">
             <h1 className="text-xl">Restaurant</h1>

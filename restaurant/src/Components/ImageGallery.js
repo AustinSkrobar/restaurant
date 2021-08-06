@@ -9,7 +9,7 @@ import Shakshuka from "../images/Shakshouka.jpg";
 
 export default (params) => {
   return (
-    <div className=" grid grid-rows-2 grid-flow-col ">
+    <div className=" grid grid-rows-2 grid-flow-col  ">
       <img src={BigOlChicken} alt="chicken" />
       <img src={SeafoodGumbo} alt="gumbo" />
       <img src={appetizers} alt="appetizers" />
