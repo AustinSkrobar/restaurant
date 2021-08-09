@@ -1,6 +1,8 @@
 
 import React, { useState, useEffect } from "react";
 
+
+
 export default (params) => {
   const [show, setShow] = useState(true);
 
@@ -27,6 +29,7 @@ export default (params) => {
       <div className="lg:w-auto">
         <div className="text-sm text-red-700 mr-32 flex justify-end  active: ">
           <a href className="  hover:text-red-700 mr-4">
+
             Welcome
           </a>
           <a href className="  hover:text-red-700 mr-4">
@@ -44,12 +47,13 @@ export default (params) => {
           <a href className="  hover:text-red-700 mr-4">
             Find us
           </a>
-          <a href className="  hover:text-red-700 mr-4 border-2">
+
+          <a href={Booking} className=" text-white hover:text-red-700 mr-4 px-1 border-2">
             Reservation
           </a>
           {/* <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6"
+            className="h-6 w-6 text-white"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
