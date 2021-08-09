@@ -1,10 +1,31 @@
-import Header from "../Components/Header";
+
+import React, { useState, useEffect } from "react";
 
 export default (params) => {
+  const [show, setShow] = useState(true);
+
+  const controllNavbar =()=>{
+    if(window.scrollY>100){
+      setShow(false)
+}else{
+  setShow(true)
+}
+  }
+
+  useEffect(() =>{
+   window.addEventListener('scroll',
+   controllNavbar)
+   return()=>{
+     window.removeEventListener('scroll',
+     controllNavbar)
+   }
+  }, [])
+
+
   return (
-    <nav className="p-7 absolute sticky h-0 z-40 top-0 right-10">
+    <nav className={`nav ${show && "p-7 absolute sticky h-0 z-40 top-0 right-50"}`}>
       <div className="lg:w-auto">
-        <div className="text-sm text-red-700 mr-8 flex justify-center">
+        <div className="text-sm text-red-700 mr-32 flex justify-end  active: ">
           <a href className="  hover:text-red-700 mr-4">
             Welcome
           </a>
@@ -45,29 +66,3 @@ export default (params) => {
     </nav>
   );
 };
-
-// export default (params) => {
-//    return(
-//   <nav className=" p-6">
-//   <div className="lg:w-auto">
-//     <div className="text-sm lg:flex-grow">
-//       <a href className="hover:text-black mr-4">
-//        Welcome
-//       </a>
-//       <a href className=" hover:text-black mr-4">
-//         About us
-//       </a>
-//       <a href className=" hover:text-black mr-4">
-//         Menu
-//       </a>
-//       <a href className=" hover:text-black mr-4">
-//        Gallery
-//       </a>
-//       <a href className="hover:text-black mr-4">
-//         News
-//       </a>
-//     </div>
-//   </div>
-// </nav>
-//    )
-// }
