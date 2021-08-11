@@ -3,6 +3,7 @@
 
 export default (params) => {
   return (
+
     <div className="static z-40 bg-scroll overflow-hidden">
       <div className="absolute text-white top-60 left-60">
         {" "}
