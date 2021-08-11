@@ -1,8 +1,20 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 
+import Booking from "./Booking";
+
+import Header from "../Components/Header";
 
 
 export default (params) => {
+
+
+  const triggerText = 'Open Form';
+   const onSubmit = (event) => {
+   event.preventDefault(event);
+   console.log(event.target.name.value);
+   console.log(event.target.email.value);
+ };
+
   const [show, setShow] = useState(true);
 
   const controllNavbar = () => {
@@ -48,9 +60,9 @@ export default (params) => {
           <a href className=" mr-4">
             Find us
           </a>
-          <a href className=" mr-4 border-2 border-white">
-            Reservation
-          </a>
+
+          <Booking triggerText={triggerText} onSubmit={onSubmit} />
+
         </div>
       </div>
     </nav>
