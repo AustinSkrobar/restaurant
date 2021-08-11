@@ -8,5 +8,5 @@ export {default as About} from "./About"
 export {default as ImageGallery} from "./ImageGallery"
 export { default as Map } from "./Map"
 export { default as Footer } from "./Footer"
-export { default as Booking } from "./Bookings/Booking"
+export { default as Booking } from "./Booking"
 
