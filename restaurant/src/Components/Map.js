@@ -56,8 +56,23 @@ export default (params) => {
                 d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
               /> 
             </svg>*/}
-            <label className="border p-1 w-44">
-              <input
+            {/* <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-6 w-6 m-2"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              >
+              <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
+            </svg> */}
+
+            <label className="text-center mt-2 ml-2 border p-1 w-44">
+              <input className="text-center "
                 type="date"
                 data-date-inline-picker="true"
                 placeholder="Date"
@@ -66,23 +81,8 @@ export default (params) => {
               />
             </label>
           </div>
-          <div className="flex flex-row p-5">
-            {/* <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6 m-2"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-              />
-            </svg> */}
-
-            <input
+          <div className=" flex flex-row p-5">
+            <input 
               type="time"
               placeholder="Time"
               name="time"
