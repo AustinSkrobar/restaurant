@@ -4,7 +4,7 @@
 export default (params) => {
   return (
     <div className="static z-40 bg-scroll ">
-      <div className="absolute text-white top-60 left-60">
+      <div className="absolute text-white top-80 left-72">
         {" "}
         <h3 className="font-cursiveText text-4xl "> Welcome to</h3> 
         <h1 className="text-4xl bold">Grand Avenue</h1>{" "}
