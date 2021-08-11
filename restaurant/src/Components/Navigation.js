@@ -1,13 +1,20 @@
+import { useState, useEffect, useCallback } from "react";
 
-import "../Components/Header";
-import Booking from './Bookings/Booking'
+import Booking from "./Booking";
 
 import Header from "../Components/Header";
 
-
 export default (params) => {
+
+  const triggerText = 'Open Form';
+   const onSubmit = (event) => {
+   event.preventDefault(event);
+   console.log(event.target.name.value);
+   console.log(event.target.email.value);
+ };
+
   return (
-    <nav className="p-7 absolute sticky h-0 z-40 top-0 right-10">
+    <nav className={`p-7 absolute sticky h-0 z-40 top-0 right-10 `}>
       <div className="lg:w-auto">
         <div className=" mr-8 flex justify-center">
           <a href="" className=" text-white hover:text-red-700 mr-4">
@@ -28,10 +35,7 @@ export default (params) => {
           <a href className="  hover:text-red-700 mr-4">
             Find us
           </a>
-
-          <a href={Booking} className=" text-white hover:text-red-700 mr-4 px-1 border-2">
-            Reservation
-          </a>
+          <Booking triggerText={triggerText} onSubmit={onSubmit} />
           {/* <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-6 w-6 text-white"
@@ -39,6 +43,7 @@ export default (params) => {
             viewBox="0 0 24 24"
             stroke="currentColor"
           >
+          className="text-white hover:text-red-700 mr-4 px-1 border-2"
             <path
               strokeLinecap="round"
               strokeLinejoin="round"
