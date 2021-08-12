@@ -38,28 +38,23 @@ export default (params) => {
 
   return (
     <div className="">
-      <button
-        onClick={setModalIsOpenToTrue}
-      >
-        Reservations
-      </button>
+      <button onClick={setModalIsOpenToTrue}>Reservations</button>
 
       <div
-        className={`${
-          modalIsOpen &&
-          "w-1/3 fixed z-50 transform translate-x-full"
-        }`}
+        className={`${modalIsOpen && "fixed z-50 transform translate-x-full"}`}
       >
         {modalIsOpen ? (
-          <div className="w-xl">
-            <button className="text-white" onClick={setModalIsOpenToFalse}>
-              x
-            </button>
-            <div className="flex flex-col border">
+          <div className="">
+            <div className="flex flex-col border h-xxl">
+              <button className="text-white w-full flex justify-start" onClick={setModalIsOpenToFalse}>
+                x
+              </button>
               <p className="flex justify-center font-cursiveText text-4xl text-white italic">
                 Chef
               </p>
-              <p className="flex justify-center text-5xl font-thin text-white">MENU</p>
+              <p className="flex justify-center text-5xl font-thin text-white">
+                MENU
+              </p>
               <form
                 className="grid grid-cols-3 grid-rows-4"
                 onSubmit={handleSubmit}
@@ -67,27 +62,26 @@ export default (params) => {
                 <div className="p-5 flex flex-col w-44">
                   <p className="text-white">NAME*</p>
                   <label className="border p-1 flex flex-row w-44">
-                    <input type="text" name="names" onChange={handleChange} />
+                    <input type="text" className="px-2" name="names" onChange={handleChange} />
                   </label>
                 </div>
                 <div className="p-5 flex flex-col w-44">
                   <p className="text-white">EMAIL*</p>
                   <label className="border p-1 flex flex-row w-44">
-                    <input type="text" name="email" onChange={handleChange} />
+                    <input type="text" className="px-2" name="email" onChange={handleChange} />
                   </label>
                 </div>
                 <div className="p-5 flex flex-col w-44">
                   <p className="text-white">PHONE*</p>
                   <label className="border p-1 flex flex-row w-44">
-                    <input type="text" name="phone" onChange={handleChange} />
+                    <input type="text" className="px-2" name="phone" onChange={handleChange} />
                   </label>
                 </div>
                 <div className="flex flex-col p-5 w-44">
-                <p className=" text-white">
-                    DATE
-                  </p>
+                  <p className=" text-white">DATE</p>
                   <label className="border p-1 w-44">
                     <input
+                    className="px-2"
                       type="date"
                       data-date-inline-picker="true"
                       placeholder="Date"
@@ -97,59 +91,43 @@ export default (params) => {
                   </label>
                 </div>
                 <div className="flex flex-col p-5">
-                <p className=" text-white">
-                    TIME
-                  </p>
+                  <p className=" text-white">TIME</p>
                   <label className="border p-1 flex flex-row w-44">
                     <input
                       type="time"
                       placeholder="Time"
                       name="time"
-                      className="  w-44"
+                      className="w-44"
                       onChange={handleChange}
                     />
                   </label>
                 </div>
                 <div className="p-5 flex flex-col ">
-                <p className=" text-white">
-                    SEATS
-                  </p>
-                  <label className="border p-1 flex flex-row w-44 h-10">
+                  <p className=" text-white">SEATS</p>
+                  <label className="border p-1 flex flex-row w-">
                     <input
                       type="number"
                       name="people"
                       onChange={handleChange}
                       className="w-44"
                     />
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-5 w-5 m-2"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
                   </label>
                 </div>
-                <div className="col-start-1 col-end-4 row-start-3 row-end-3 p-5 flex flex-col ">
-                  <p className="flex justify-center text-white">
+                <div className="col-start-1 col-end-4 row-start-3 row-end-3 px-5 flex flex-col ">
+                  <p className="flex justify-center text-white pb-2">
                     SPECIAL REQUESTS
                   </p>
-                  <label className="border p-1 flex flex-row w-full h-44">
+                  <label className="border p-1 w-full">
                     <input
                       type="text"
-                      className="w-full"
+                      className="w-full py-14"
                       name="phone"
                       onChange={handleChange}
                     />
                   </label>
                 </div>
                 <input
-                  className="col-start-2 col-end-3 row-start-4 row-end-4 text-xs h-10 bg-black text-white"
+                  className="col-start-2 col-end-3 row-start-4 row-end-4 text-xs h-10 bg-black text-white m-2"
                   type="submit"
                   value="BOOK NOW"
                 />
