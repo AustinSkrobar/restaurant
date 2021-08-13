@@ -9,6 +9,7 @@ export default (params) => {
     date: "",
     time: "",
     people: "",
+    specialRequest: "", 
   });
 
   const handleChange = (e) => {
@@ -121,7 +122,7 @@ export default (params) => {
                     <input
                       type="text"
                       className="w-full py-14"
-                      name="phone"
+                      name="specialRequest"
                       onChange={handleChange}
                     />
                   </label>
