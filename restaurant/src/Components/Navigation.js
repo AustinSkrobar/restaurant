@@ -18,7 +18,7 @@ export default (params) => {
   const [show, setShow] = useState(true);
 
   const controllNavbar = () => {
-    if (window.scrollY > 50) {
+    if (window.scrollY  < 45 || window.scrollY>2500) {
       setShow(false);
     } else {
       setShow(true);
@@ -36,13 +36,13 @@ export default (params) => {
     <nav
       className={`nav ${
         show
-          ? "p-7 absolute w-full fixed h-0 "
-          : "p-7 absolute sticky h-0 z-40 top-0 "
+          ? " transition ease-in-out duration-1000 p-7 absolute sticky h-0 z-40 top-0 "
+          : " p-7 absolute w-full fixed h-0 "
       }`}
     >
       <div className="lg:w-auto">
         <div className="text-sm text-red-700 mr-32 flex justify-end  ">
-          <a href className="   mr-4">
+          <a href className=" mr-4">
             Welcome
           </a>
           <a href className=" mr-4">
