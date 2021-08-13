@@ -30,7 +30,7 @@ export default (params) => {
         <div className="w-2/5 h-96 mb-5">
           <img src={mapImg} />
         </div>
-        <div className="w-96 h-52 mb-5 flex flex-col bg-red-600 transform -translate-x-20 translate-y-10 p-4 hover:shadow-2xl">
+        <div className="w-96 h-52 mb-5 flex flex-col bg-red-600 transform -translate-x-20 translate-y-10 p-4 hover:shadow-2xl ">
           <h4 className="font-cursiveText text-4xl text-white italic transform translate-y-3">Branch</h4>
           <h2 className="text-5xl font-thin text-white mb-1">Center</h2>
           <p className="text-sm text-white">Restaurant Name</p>

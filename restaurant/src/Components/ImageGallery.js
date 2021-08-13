@@ -19,6 +19,7 @@ export default (params) => {
       <img className="w-full" src={GrilledChicken} alt="grilledchicken" />
       <img className="w-full" src={Noodles} alt="noodles" />
       <img className="w-full" src={Shakshuka} alt="shakshouka" />
+      
     </div>
   );
 };

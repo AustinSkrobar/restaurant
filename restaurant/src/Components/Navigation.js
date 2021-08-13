@@ -23,7 +23,7 @@ export default (params) => {
   }, []);
 
   return (
-    <nav className={`nav ${show && " p-7  w-full fixed  "}`}>
+    <nav className={`nav ${show ? " p-7  w-full fixed animate-fade-in-down ":"p-7  w-full opacity-0 fixed animate-fade-out-down"}`}>
       <div className="lg:w-auto">
         <div className="text-sm text-red-700 mr-32 flex justify-end  ">
           <a href className=" mr-4">
@@ -45,7 +45,7 @@ export default (params) => {
             Find us
           </a>
 
-          <Booking triggerText={triggerText} onSubmit={onSubmit} />
+          <Booking className="animate-pulse" triggerText={triggerText} onSubmit={onSubmit} />
         </div>
       </div>
     </nav>
