@@ -1,28 +1,18 @@
 import { useState, useEffect, useCallback } from "react";
-
 import Booking from "./Booking";
 
-import Header from "../Components/Header";
-
-
 export default (params) => {
-
-
-  const triggerText = 'Open Form';
-   const onSubmit = (event) => {
-   event.preventDefault(event);
-   console.log(event.target.name.value);
-   console.log(event.target.email.value);
- };
+  const triggerText = "Open Form";
+  const onSubmit = (event) => {
+    event.preventDefault(event);
+    console.log(event.target.name.value);
+    console.log(event.target.email.value);
+  };
 
   const [show, setShow] = useState(true);
 
   const controllNavbar = () => {
-    if (window.scrollY  < 45 || window.scrollY>2500) {
-      setShow(false);
-    } else {
-      setShow(true);
-    }
+    window.scrollY > 2300 ? setShow(false) : setShow(true);
   };
 
   useEffect(() => {
@@ -33,13 +23,7 @@ export default (params) => {
   }, []);
 
   return (
-    <nav
-      className={`nav ${
-        show
-          ? " transition ease-in-out duration-1000 p-7 absolute sticky h-0 z-40 top-0 "
-          : " p-7 absolute w-full fixed h-0 "
-      }`}
-    >
+    <nav className={`nav ${show && " p-7  w-full fixed  "}`}>
       <div className="lg:w-auto">
         <div className="text-sm text-red-700 mr-32 flex justify-end  ">
           <a href className=" mr-4">
@@ -62,7 +46,6 @@ export default (params) => {
           </a>
 
           <Booking triggerText={triggerText} onSubmit={onSubmit} />
-
         </div>
       </div>
     </nav>
