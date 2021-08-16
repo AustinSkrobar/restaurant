@@ -1,6 +1,8 @@
 import { useState, useEffect, useCallback } from "react";
 import Booking from "./Booking";
 
+
+import Header from "../Components/Header";
 export default (params) => {
   const triggerText = "Open Form";
   const onSubmit = (event) => {
@@ -14,6 +16,7 @@ export default (params) => {
 
   const controllNavbar = () => {
     window.scrollY > 2300 ? setShow(false) : setShow(true);
+
   };
 
   useEffect(() => {
@@ -24,7 +27,9 @@ export default (params) => {
   }, []);
 
   return (
+
     <nav className={`nav ${show ? " p-7  w-full fixed animate-fade-in-down ":"p-7  w-full opacity-0 fixed animate-fade-out-down"}`}>
+
       <div className="lg:w-auto">
         <div className="text-lg text-red-700 mr-32 flex justify-end  ">
           <a href className=" mr-4">
@@ -47,9 +52,9 @@ export default (params) => {
           </a>
           
 
+
           <Booking className="animate-pulse" triggerText={triggerText} onSubmit={onSubmit} />
-         
-          
+
         </div>
 
       </div>

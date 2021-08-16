@@ -9,7 +9,7 @@ export default (params) => {
     date: "",
     time: "",
     people: "",
-    specialRequest: "", 
+    specialRequest: "",
   });
 
   const handleChange = (e) => {
@@ -47,7 +47,10 @@ export default (params) => {
         {modalIsOpen ? (
           <div className="">
             <div className="flex flex-col border h-xxl">
-              <button className="text-white w-full flex justify-start" onClick={setModalIsOpenToFalse}>
+              <button
+                className="text-white w-full flex justify-start"
+                onClick={setModalIsOpenToFalse}
+              >
                 x
               </button>
               <p className="flex justify-center font-cursiveText text-4xl text-white italic">
@@ -63,26 +66,41 @@ export default (params) => {
                 <div className="p-5 flex flex-col w-44">
                   <p className="text-white">NAME*</p>
                   <label className="border p-1 flex flex-row w-44">
-                    <input type="text" className="px-2" name="names" onChange={handleChange} />
+                    <input
+                      type="text"
+                      className="px-2"
+                      name="names"
+                      onChange={handleChange}
+                    />
                   </label>
                 </div>
                 <div className="p-5 flex flex-col w-44">
                   <p className="text-white">EMAIL*</p>
                   <label className="border p-1 flex flex-row w-44">
-                    <input type="text" className="px-2" name="email" onChange={handleChange} />
+                    <input
+                      type="text"
+                      className="px-2"
+                      name="email"
+                      onChange={handleChange}
+                    />
                   </label>
                 </div>
                 <div className="p-5 flex flex-col w-44">
                   <p className="text-white">PHONE*</p>
                   <label className="border p-1 flex flex-row w-44">
-                    <input type="text" className="px-2" name="phone" onChange={handleChange} />
+                    <input
+                      type="text"
+                      className="px-2"
+                      name="phone"
+                      onChange={handleChange}
+                    />
                   </label>
                 </div>
                 <div className="flex flex-col p-5 w-44">
                   <p className=" text-white">DATE</p>
                   <label className="border p-1 w-44">
                     <input
-                    className="px-2"
+                      className="px-2"
                       type="date"
                       data-date-inline-picker="true"
                       placeholder="Date"
