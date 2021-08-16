@@ -66,10 +66,9 @@ module.exports = {
       backgroundImage: (theme) => ({
         header: "url('./images/dumplings.jpg')",
         Menu: "url('./images/mainChefMenu.jpg')",
-        otherheader:
-          "url('/Users/connoryates/Documents/restaurant/restaurant/src/images/headerPic.jpeg')",
+        otherheader: "url('./images/headerPic.jpeg')",
         otherheaderer:
-          "url('/Users/connoryates/Documents/restaurant/restaurant/src/images/kura-tregenza-UlPLmbSOu_w-unsplash.jpeg')",
+          "url('./images/kura-tregenza-UlPLmbSOu_w-unsplash.jpeg')",
       }),
       fontFamily: {
         sans: [
