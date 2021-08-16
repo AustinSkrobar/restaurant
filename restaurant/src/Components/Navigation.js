@@ -30,8 +30,8 @@ export default (params) => {
 
     <nav className={`nav ${show ? " p-7  w-full fixed animate-fade-in-down ":"p-7  w-full opacity-0 fixed animate-fade-out-down"}`}>
 
-      <div className="lg:w-auto">
-        <div className="text-lg text-red-700 mr-32 flex justify-end  ">
+      <div className="">
+        <div className="text-lg text-red-700 mr-32 flex flex-col lg:flex-row lg:justify-end  ">
           <a href className=" mr-4">
             Welcome
           </a>
