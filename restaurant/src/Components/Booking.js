@@ -39,7 +39,7 @@ export default (params) => {
 
   return (
     <div className="">
-      <button onClick={setModalIsOpenToTrue}>Reservations</button>
+      <button className="animate-pulse" onClick={setModalIsOpenToTrue}>Reservations</button>
 
       <div
         className={`${modalIsOpen && "fixed z-50 transform translate-x-full"}`}
