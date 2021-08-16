@@ -1,6 +1,6 @@
 export default (params) => {
   return (
-    <div className="static w-full z-40 bg-scroll ">
+    <div className="static w-screen z-40 bg-scroll ">
       <div className="absolute text-white top-80 left-72">
         {" "}
         <h3 className="font-cursiveText text-4xl "> Welcome to</h3>
@@ -12,7 +12,7 @@ export default (params) => {
       </div>
 
       <div
-        className="bg-otherheaderer bg-center bg-cover h-xxl bg-no-repeat mx-auto "
+        className="bg-header bg-center bg-cover h-xxl bg-no-repeat mx-auto md:w-screen "
         alt="dumplings"
         div
       />

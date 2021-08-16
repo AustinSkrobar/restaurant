@@ -27,8 +27,8 @@ module.exports = {
         },
         boxfade: {
           from: {
-            transform: "translateY(40rem)",
-            transform: "translateX(40rem)",
+            transform: "translateY(-40rem)",
+            transform: "translateX(-40rem)",
           },
           to: {
             transform: "translateY(0px)",
@@ -46,7 +46,7 @@ module.exports = {
             color: "red",
           },
           "50%": {
-            color: "black",
+            color: "white",
           },
           "100%": {
             color: "blue",
@@ -58,18 +58,14 @@ module.exports = {
         "fade-in-down": "fade-in-down 3s ease-out",
         "fade-out-down": "fade-out-down 3s ease-out",
         wiggle: "wiggle 1s ease-in-out infinite",
-        pulse: "colorchange 0.5s ease-in-out infinite ",
+        pulse: "pulse 2s ease-in-out infinite ",
         colorchange: "colorchange 2s ease-in-out infinate",
-        boxfade: "boxfade 3s  ",
+        boxfade: "boxfade 1s  ",
       },
 
       backgroundImage: (theme) => ({
-        header: "url('./images/dumplings.jpg')",
         Menu: "url('./images/mainChefMenu.jpg')",
-        otherheader:
-          "url('/Users/connoryates/Documents/restaurant/restaurant/src/images/headerPic.jpeg')",
-        otherheaderer:
-          "url('/Users/connoryates/Documents/restaurant/restaurant/src/images/kura-tregenza-UlPLmbSOu_w-unsplash.jpeg')",
+        header: "url('./images/kura-tregenza-UlPLmbSOu_w-unsplash.jpeg')",
       }),
       fontFamily: {
         sans: [

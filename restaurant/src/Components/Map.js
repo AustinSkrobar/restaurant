@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect} from "react";
 import mapImg from '../images/Screen Shot 2021-08-03 at 12.22.45 PM.png'
 
 export default (params) => {
@@ -7,6 +7,22 @@ export default (params) => {
     time: "",
     people: "",
   });
+
+  const [show, setShow] = useState(false);
+
+  const controllMap = () => {
+    if (window.scrollY > 3800) {
+      console.log(window.scrollY)
+      setShow(true);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", controllMap);
+    return () => {
+      window.removeEventListener("scroll", controllMap);
+    };
+  }, [controllMap]);
 
   const handleChange = (e) => {
     e.preventDefault();
@@ -30,7 +46,7 @@ export default (params) => {
         <div className="w-2/5 h-96 mb-5">
           <img src={mapImg} />
         </div>
-        <div className="w-96 h-52 mb-5 flex flex-col bg-red-600 transform -translate-x-20 translate-y-10 animate-boxfade p-4 hover:shadow-2xl ">
+        <div className={`w-96 h-52 mb-5 flex flex-col bg-red-600 transform -translate-x-20 translate-y-10 ${show ? "animate-boxfade" : " "} p-4 hover:shadow-2xl `}>
           <h4 className="font-cursiveText text-4xl text-white italic transform translate-y-3">Branch</h4>
           <h2 className="text-5xl font-thin text-white mb-1">Center</h2>
           <p className="text-sm text-white">Restaurant Name</p>
