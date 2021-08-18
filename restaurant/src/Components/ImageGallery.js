@@ -11,14 +11,14 @@ export default (params) => {
   return (
 
     <div className="grid grid-rows-2 grid-flow-col">
-      <img className="w-full" src={BigOlChicken} alt="chicken" />
-      <img className="w-full" src={SeafoodGumbo} alt="gumbo" />
-      <img className="w-full" src={appetizers} alt="appetizers" />
-      <img className="w-full" src={dumplings} alt="dumplings" />
-      <img className="w-full" src={BarTop} alt="bartop" />
-      <img className="w-full" src={GrilledChicken} alt="grilledchicken" />
-      <img className="w-full" src={Noodles} alt="noodles" />
-      <img className="w-full" src={Shakshuka} alt="shakshouka" />
+      <img className="w-screen" src={BigOlChicken} alt="chicken" />
+      <img className="w-screen" src={SeafoodGumbo} alt="gumbo" />
+      <img className="w-screen" src={appetizers} alt="appetizers" />
+      <img className="w-screen" src={dumplings} alt="dumplings" />
+      <img className="w-screen" src={BarTop} alt="bartop" />
+      <img className="w-screen" src={GrilledChicken} alt="grilledchicken" />
+      <img className="w-screen" src={Noodles} alt="noodles" />
+      <img className="w-screen" src={Shakshuka} alt="shakshouka" />
       
     </div>
   );

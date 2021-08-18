@@ -31,8 +31,18 @@ module.exports = {
             transform: "translateX(-40rem)",
           },
           to: {
-            transform: "translateY(0px)",
-            transform: "translateX(0px)",
+            transform: "translateY(40rem)",
+            transform: "translateX(20rem)",
+          },
+        },
+        boxerfader: {
+          from: {
+            // transform: "translateY(40rem)",
+            transform: "translateX(60rem)",
+          },
+          to: {
+            transform: "translateY(-5rem)",
+            transform: "translateX(-5rem)",
           },
         },
         pulse: {
@@ -61,6 +71,7 @@ module.exports = {
         pulse: "pulse 2s ease-in-out infinite ",
         colorchange: "colorchange 2s ease-in-out infinate",
         boxfade: "boxfade 1s  ",
+        boxerfader:"boxerfader 1s"
       },
 
       backgroundImage: (theme) => ({
