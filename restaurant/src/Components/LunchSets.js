@@ -6,7 +6,7 @@ export default ({ lunchData }) => {
       <h2 className="flex justify-center divide-y underline text-xl">
         Lunch Sets
       </h2>
-      <ul className="grid grid-rows-4 grid-flow-col w-full justify-center">
+      <ul className="lg:grid lg:grid-rows-4 grid-flow-col w-full justify-center">
         {lunchData.map((item) => (
           <FoodItem
             order={item.order}
