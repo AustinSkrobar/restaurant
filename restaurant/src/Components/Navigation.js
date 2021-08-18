@@ -2,7 +2,7 @@ import { useState, useEffect, useCallback } from "react";
 import Booking from "./Booking";
 
 
-import Header from "../Components/Header";
+
 export default (params) => {
   const triggerText = "Open Form";
   const onSubmit = (event) => {
@@ -10,6 +10,8 @@ export default (params) => {
     console.log(event.target.name.value);
     console.log(event.target.email.value);
   };
+
+
 
 
   const [show, setShow] = useState(true);

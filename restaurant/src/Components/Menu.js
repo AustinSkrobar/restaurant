@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect} from "react";
 import { Signature, LunchSets, Dinner } from "./index";
 import mainChefMenu from "../images/mainChefMenu.jpg";
 import data from "../data.json";
@@ -39,7 +39,7 @@ export default (params) => {
           alt="header for chefs menu"
         >
           <div
-            className={`transition-opacitiy relative z-0 w-1/3 h-40 bg-red-600 transform translate-x-20 translate-y-36 p-5 ${"animate-bounce"}`}
+            className={`transition-opacitiy relative z-0 w-1/3 h-40 bg-red-600 transform translate-x-20 translate-y-36 p-5 ${"animate-boxfade"}`}
           >
             <p className="font-cursiveText text-4xl text-white italic">Chef</p>
             <p className="text-5xl font-thin text-white">MENU</p>
