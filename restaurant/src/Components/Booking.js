@@ -38,10 +38,12 @@ export default (params) => {
   };
 
   return (
+
+    <div className="">
+      <button className="animate-pulse px-3 py-2 flex items-center text-lg font-bold  leading-snug text-red-100 hover:opacity-75" onClick={setModalIsOpenToTrue}>Reservations</button>
+
     <div>
-      <button className="animate-pulse" onClick={setModalIsOpenToTrue}>
-        Reservations
-      </button>
+  
 
       <div className={` absolute z-50 ${modalIsOpen && ""}`}>
         {modalIsOpen ? (
