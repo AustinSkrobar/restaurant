@@ -32,13 +32,15 @@ export default (params) => {
   signature.Signature[2].pic = salmonSteak;
 
   return (
-    <div id='menu'>
+    <div className="static">
       <div className="h-xl">
         <div
           className="bg-Menu h-xl bg-no-repeat bg-cover bg-center "
           alt="header for chefs menu"
         >
-          <div className="w-1/2 lg:w-1/3 h-40  bg-red-600 m-5 p-10  animate-boxfade">
+          <div
+            className='z-10 w-1/2 lg:w-1/3 h-40 bg-red-600 m-5 p-10'
+          >
             <p className="font-cursiveText text-4xl text-white italic">Chef</p>
             <p className="text-5xl font-thin text-white">MENU</p>
           </div>
