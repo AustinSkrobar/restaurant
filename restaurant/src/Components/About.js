@@ -2,7 +2,7 @@ import appetizers from "../images/appetizers.jpeg";
 export default (params) => {
 
     return(
-        <div >
+        <div id='about' >
             
             <div className=" font-thin text-black">
                 <div className="p-10 text-left lg:text-center">
