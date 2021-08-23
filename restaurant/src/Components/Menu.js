@@ -9,6 +9,10 @@ import crabCurry from "../images/Kimchi-Ramen-35-1024x682-150x150.jpg";
 export default (params) => {
   const [show, setShow] = useState(false);
 
+  const [SignatureOpen, setSignatureOpen] = useState(false);
+  const [DinnerOpen, setDinnerOpen] = useState(false);
+  const [LunchOpen, setLunchOpen] = useState(false);
+
   const controllMenu = () => {
     if (window.scrollY > 1200) {
       console.log(window.scrollY);
@@ -32,6 +36,7 @@ export default (params) => {
   signature.Signature[2].pic = salmonSteak;
 
   return (
+
     <div id='menu'>
       <div className="h-xl">
         <div
@@ -39,7 +44,7 @@ export default (params) => {
           alt="header for chefs menu"
         >
           <div
-            className={`  w-1/3 h-40  bg-red-600 m-5 p-10  ${"animate-boxfade"}`}
+            className={` w-1/3 h-40  bg-red-600 m-5 p-10  ${"animate-boxfade"}`}
           >
             <p className="font-cursiveText text-4xl text-white italic">Chef</p>
             <p className="text-5xl font-thin text-white">MENU</p>

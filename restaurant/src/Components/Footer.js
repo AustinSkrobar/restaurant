@@ -6,7 +6,7 @@ import darkBerries from "../images/darkBerries.jpg";
 import lettuceWraps from "../images/lettuceWraps.jpg";
 export default (params) => {
   return (
-    <div>
+    <div id='findus'>
       <div className="w-screen lg:h-72 grid justify-items-center bg-footerGray md:bg-black-900">
         <div className=" flex flex-wrap lg:flex-row p-4">
           <div className="ml-16 w-1/3 text-white p-4">
