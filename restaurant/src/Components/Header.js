@@ -1,6 +1,8 @@
 export default (params) => {
   return (
+
     <div id ='welcome' className="static w-screen bg-scroll ">
+
       <div className="absolute text-white top-40 left-40 lg:top-80 lg:left-72">
         {" "}
         <h3 className="animate-fade-in-down font-cursiveText text-4xl "> Welcome to</h3>
