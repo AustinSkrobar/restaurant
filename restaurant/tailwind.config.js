@@ -71,10 +71,11 @@ module.exports = {
         pulse: "pulse 2s ease-in-out infinite ",
         colorchange: "colorchange 2s ease-in-out infinate",
         boxfade: "boxfade 1s  ",
-        boxerfader:"boxerfader 1s"
+        boxerfader: "boxerfader 1s",
       },
 
       backgroundImage: (theme) => ({
+        Map: "url('./images/Screen Shot 2021-08-03 at 12.22.45 PM.png')",
         Menu: "url('./images/mainChefMenu.jpg')",
         header: "url('./images/kura-tregenza-UlPLmbSOu_w-unsplash.jpeg')",
       }),
